@@ -1,0 +1,227 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    list-style-type: none;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+}
+
+/* footer top */
+.footer-top
+{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(248, 217, 63);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15% 6%;
+    align-items: center;
+    gap: 20px;
+}
+.footer-top .image
+{
+    width: 380px;
+    height:300px;
+    
+}
+
+.image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    pointer-events: none;
+}
+.footer-top .content
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  
+}
+
+.content .fav ul li
+{
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.content .fav h3 
+{
+    position: relative;
+}
+.content .fav h3::before
+{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color:white;
+    bottom:-2px;
+    border-radius: 50%;
+}
+
+.content .support ul li
+{
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.content  ul li:hover
+{
+    transform: translateX(5px);
+}
+.content .support h3 
+{
+    position: relative;
+    
+}
+.content .support h3::before
+{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color:white;
+    bottom:-2px;
+    border-radius: 50%;
+}
+
+.content .contact .contact-top
+{
+    padding-bottom: 13px;
+}
+.contact .contact-top h3
+{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.contact .contact-top p
+{
+    padding-bottom: 8px;
+    
+}
+.contact .contact-top p i
+{
+    padding-right: 5px;
+}
+.contact .contact-top p  .fa-phone
+{
+    color: rgb(241, 39, 39);
+}
+.contact .contact-top p  .fa-whatsapp
+{
+    color: rgb(53, 255, 26);
+}
+
+.contact .contact-bottom h3
+{
+    padding-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.contact .contact-bottom p
+{
+   line-height: 25px;
+}
+
+.content .social h3
+{
+    position: relative;
+}
+
+.content .social h3::before
+{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color:white;
+    bottom:-2px;
+    border-radius: 50%;
+}
+
+.content .social .links
+{
+    padding-top: 20px;
+}
+
+.content .social .links i
+{
+    padding:3px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.content .social .links i:hover
+{
+    transform: translateY(-3px);
+}
+
+.content .social .links .fa-facebook
+{
+    color: blue;
+}
+.content .social .links .fa-twitter
+{
+    color: #1DA1F2;
+}
+.content .social .links .fa-instagram
+{
+    color: #d62976;
+}
+
+/* footer bottom */
+.footer-bottom
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(196, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.footer-bottom p a
+{
+    text-decoration:none ;
+    color: #e31371;
+}
+
+/* responsive */
+@media (max-width:700px) {
+    .footer-top
+    {
+        width: 100%;
+        height:100%;
+        background-color: rgb(248, 217, 63);
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15% 6%;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer-top .content
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-direction: column;   
+    }
+    
+}
